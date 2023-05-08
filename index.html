@@ -10,8 +10,6 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/01c8e46bc2.js" crossorigin="anonymous"></script>
   <title>My Bio</title>
-
-
 </head>
 
 <body>
@@ -19,7 +17,6 @@
     <div class="container-fluid">
       <img class="navlogo" src="kmlogo.png" alt="logo with initials K & M in a circle">
       <a class="navbar-brand Name">Kristen Morrison</a>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +27,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="dropleft nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My Work
             </a>
             <ul class="dropdown-menu">
@@ -59,20 +56,22 @@
     </div>
   </nav>
 
-
-
   <div>
-    <h1 class="main-title text-center display-1 fw-bold  text-black ">Web Developer<br>
-      <hr class="divider justify-content-center" style="height:2px;border-width:0;color:gray;background-color:#fff">
-      Graphic
-      Designer
-    </h1>
+    <div>
+      <h1 class="main-title text-center display-1 fw-bold text-white">Web Developer</h1>
+    </div>
+    <div>
+      <hr class="divider justify-content-center" style="height:2px;border-width:0;color:gray;background-color:black">
+    </div>
+    <div>
+      <h1 class="main-title2 text-center display-1 fw-bold text-white ">Graphic Designer</h1>
+    </div>
   </div>
 
   <div class="accordion accordion-flush bg-secondary p-3 bg-dark border border-light" id="accordionExample">
     <div class="accordion-item ">
       <h2 class="accordion-header">
-        <button class="accordion-button text-bg-info" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button text-bg-info display-1 fw-bold " type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Hello.
         </button>
@@ -91,38 +90,42 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed text-bg-primary" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="accordion-button collapsed text-bg-primary display-1 fw-bold" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           Education
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           I have been enrolled part-time at Ozarks Technical Community College since 2020. I previously pursued
-          Graphic Design where I took Graphic Design I, Typography, T-Shirt Design, and Page Layout Design. I am currently pursuing a degree in Computer Information Science. I have taken Web Development I, Introduction
+          Graphic Design where I took Graphic Design I, Typography, T-Shirt Design, and Page Layout Design. I am
+          currently pursuing a degree in Computer Information Science. I have taken Web Development I, Introduction
           to Computer Programming, and Cloud Fundamentals, where I hope to achieve certification as an AWS Cloud
           Practitioner. Future classes include Web Development II, Java, Python, and Database and Query (SQL). I
           anticipate graduation in 2024.
         </div>
       </div>
     </div>
+
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="purple-button accordion-button collapsed text-bg-success" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="purple-button accordion-button collapsed text-bg-success display-1 fw-bold" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Career Aspirations
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          I am interested in the many options that a computer science degree can offer me. However, at this time I am most interested in a Web Development or Test Engineer career.
+          I am interested in the many options that a computer science degree can offer me. However, at this time, I am
+          most interested in a Web Development or Test Engineer career.
         </div>
       </div>
     </div>
+
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed text-bg-warning" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <button class="accordion-button collapsed text-bg-warning display-1 fw-bold" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           Hobbies
         </button>
       </h2>
@@ -132,17 +135,17 @@
           few examples of my photography. I typically use a digital SLR camera but also like to experiment with older
           film formats and Lomography.
         </div>
-        <img class="hobbies-pics" src="bike.jpg" alt="">
+        <img class="hobbies-pics" src="bike.jpg" alt="bike in front of brick wall">
         <img class="hobbies-pics" src="England.jpg" alt="Man sitting under seawall by ocean">
-        <img class="hobbies-pics" src="ryan.jpg" alt="">
-        <img class="hobbies-pics" src="EnglandPier.jpg" alt="underneath pier">
+        <img class="hobbies-pics" src="ryan.jpg" alt="man sitting on concrete block" width="100" height="800">
+        <img class="hobbies-pics" src="EnglandPier.jpg" alt="underneath pier" width="100" height="800">
       </div>
     </div>
     <!--My projects section- Web Development projects-->
     <div class="accordion-item my-projects">
       <h2 class="accordion-header">
-        <button class="accordion-button collapsed text-bg-danger" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <button class="accordion-button collapsed text-bg-danger display-1 fw-bold" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
           My Projects
         </button>
       </h2>
@@ -157,7 +160,6 @@
               <div class="desc">Created mock company Read!Cycled Books</div>
             </div>
           </div>
-
 
           <div class="responsive">
             <div class="gallery">
@@ -199,7 +201,6 @@
             </div>
           </div>
 
-
           <div class="responsive">
             <div class="gallery">
               <a target="_blank" href="brochure.png">
@@ -233,13 +234,10 @@
   </div>
 
   <footer>
-
     <div class="row bg-dark p-3">
       <div class="col d-flex-justify-content-center ">
         <a class="contact d-flex justify-content-center text-white"
           href="mailto:kristen.morrison52@gmail.com">kristen.morrison52@gmail.com</a>
-
-
       </div>
       <div class="col d-flex justify-content-center">
         <img class="footerlogo" src="kmlogo.png" alt="round logo with letters k and m inside">
@@ -255,18 +253,11 @@
       <div>
         <hr style="height:2px;border-width:0;color:gray;background-color:#fff">
       </div>
-
-
       <div>
-
         <i class="copyright fa-solid fa-copyright justify-content-center" style="color: #fff;"> Kristen Morrison</i>
       </div>
-
     </div>
-
   </footer>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
