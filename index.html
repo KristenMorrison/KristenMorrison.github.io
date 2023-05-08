@@ -17,20 +17,20 @@
 <body>
   <nav class="navbar fixed-top navbar-expand-lg bg-dark p-3 navbar bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      <img src="kmlogo.png" alt="logo with initials K & M in a circle">
-      <a class="navbar-brand Name ">Kristen Morrison</a>
+      <img class="navlogo" src="kmlogo.png" alt="logo with initials K & M in a circle">
+      <a class="navbar-brand Name">Kristen Morrison</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navPad collapse navbar-collapse d-flex justify-content-around" id="navbarSupportedContent">
+      <div class="navPad collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="dropleft nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My Work
             </a>
             <ul class="dropdown-menu">
@@ -39,7 +39,19 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item bg-secondary text-white" href="#">Web</a></li>
+              <li><a class="dropdown-item" href="ReadCycledBooks.png">Read!Cycled Books</a></li>
+              <li><a class="dropdown-item" href="HowardsLakeside.png">Howard's Lakeside</a></li>
+              <li><a class="dropdown-item" href="Seabubbles.png">Seabubbles</a></li>
+              <li><a class="dropdown-item" href="DogstownSchedule.png">Dogstown University</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item bg-secondary text-white" href="#">Design</a></li>
+              <li><a class="dropdown-item" href="bookjacket.png">Pirate Latitudes</a></li>
+              <li><a class="dropdown-item" href="brochure.png">HRBR Design</a></li>
+              <li><a class="dropdown-item" href="yoyo.png">Kaleido YoYo</a></li>
+              <li><a class="dropdown-item" href="poseidon.png">Poseidon Scuba</a></li>
             </ul>
           </li>
         </ul>
@@ -50,11 +62,14 @@
 
 
   <div>
-    <h1 class="main-title text-center display-1 fw-bold  text-black ">Web Developer<br>Graphic
-      Designer</h1>
+    <h1 class="main-title text-center display-1 fw-bold  text-black ">Web Developer<br>
+      <hr class="divider justify-content-center" style="height:2px;border-width:0;color:gray;background-color:#fff">
+      Graphic
+      Designer
+    </h1>
   </div>
 
-  <div class="accordion accordion-flush bg-secondary p-3 bg-dark" id="accordionExample">
+  <div class="accordion accordion-flush bg-secondary p-3 bg-dark border border-light" id="accordionExample">
     <div class="accordion-item ">
       <h2 class="accordion-header">
         <button class="accordion-button text-bg-info" type="button" data-bs-toggle="collapse"
@@ -118,122 +133,152 @@
       </h2>
       <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          In my free time I enjoy photography, cycling, reading, designing t-shirts, and listening to music. Below are a few examples of my photography. I typically use a digital SLR camera but also like to experiment with older film formats and Lomography.
+          In my free time I enjoy photography, cycling, reading, designing t-shirts, and listening to music. Below are a
+          few examples of my photography. I typically use a digital SLR camera but also like to experiment with older
+          film formats and Lomography.
         </div>
         <img class="hobbies-pics" src="bike.jpg" alt="">
-        <img class="hobbies-pics" src="England 4-2-09 701.jpg" alt="">
+        <img class="hobbies-pics" src="England.jpg" alt="Man sitting under seawall by ocean">
         <img class="hobbies-pics" src="ryan.jpg" alt="">
-        <img class="hobbies-pics" src="England -Pier- Color 4-2-09.jpg" alt="">
-        
+        <img class="hobbies-pics" src="EnglandPier.jpg" alt="underneath pier">
       </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed text-bg-danger" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            My Projects
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance,
-            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+    </div>
+    <!--My projects section- Web Development projects-->
+    <div class="accordion-item my-projects">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed text-bg-danger" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          My Projects
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h1 class="projects-title text-center">Web Development Projects</h1>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="ReadCycledBooks.png">
+                <img src="ReadCycledBooks.png" alt="bookstore website" width="600" height="400">
+              </a>
+              <div class="desc">Created mock company Read!Cycled Books</div>
+            </div>
           </div>
+
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="HowardsLakeside.png">
+                <img src="HowardsLakeside.png" alt="fishing and general store website" width="600" height="400">
+              </a>
+              <div class="desc">Rework of existing site for Howard's Lakeside General Store</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Seabubbles.png">
+                <img src="Seabubbles.png" alt="scuba diving website" width="600" height="400">
+              </a>
+              <div class="desc">Review section for Seabubble Scuba Diving group project</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="DogstownSchedule.png">
+                <img src="DogstownSchedule.png" alt="black red white themed class schedule" width="600" height="400">
+              </a>
+              <div class="desc">Class Schedule for Dogstown University</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <!--My projects section- Graphic Design projects-->
+
+          <h1 class="projects-title text-center my-projects">Graphic Design Projects</h1>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="bookjacket.png">
+                <img src="bookjacket.png" alt="pirate themed book jacket" width="600" height="400">
+              </a>
+              <div class="desc">Book jacked design for John Grisham novel Pirate Latitudes</div>
+            </div>
+          </div>
+
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="brochure.png">
+                <img src="brochure.png" alt="brochure design for architecture company" width="600" height="400">
+              </a>
+              <div class="desc">Page Layout project for HRBR Design company</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="yoyo.png">
+                <img src="yoyo.png" alt="kaleidoscope themed toy package" width="600" height="400">
+              </a>
+              <div class="desc">Kaleidoscope toy package design for a YoYo</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="poseidon.png">
+                <img src="poseidon.png" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">T-shirt design for mock scuba company</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--
- <div class="accordion bg-secondary p-3 bg-dark" id="accordionExample">
-  <div class="accordion-item ">
-    <h2 class="accordion-header">
-      <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Hello.
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body ">
-        <strong>Welcome to my online profile.</strong> My name is Kristen Morrison. I am currently attending Ozarks Technical Community College and pursuing my degree in Computer Information Science. I was previously enrolled in the Graphic Design program but decided to pursue a different career path. Learning Graphic Design has been a valuable asset as I have been learning Web Development. It helps me not only look at a project from a technical aspect, but also a visual one.
-      </div>
-    </div>
   </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Education
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        I have been enrolled in Ozarks Technical Community College since (enter date). I previously pursued Graphic Design where I took Graphic Design I, Typography, T-Shirt Design, and Page Layout Design. In my Computer Information Science where I am currently enrolled, I have taken Web Development I, Introduction to Computer Programming, and Cloud Fundamentals, where I hope to achieve certification as an AWS Cloud Practitioner. Future classes include Web Development II, Java, Python, and Database and Query (SQL). I anticipate graduation (enter date).
-      </div>
-    </div>
-  </div>
--->
+  <footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"></script>
+    <div class="row bg-dark p-3">
+      <div class="col d-flex-justify-content-center ">
+        <a class="contact d-flex justify-content-center text-white"
+          href="mailto:kristen.morrison52@gmail.com">kristen.morrison52@gmail.com</a>
+
+
+      </div>
+      <div class="col d-flex justify-content-center">
+        <img class="footerlogo" src="kmlogo.png" alt="round logo with letters k and m inside">
+      </div>
+      <div class="col d-flex justify-content-center">
+        <a class="soc-media fa-brands fa-github fa-2xl" href="http://www.github.com/KristenMorrison"
+          style="color: #ffffff;" target="_blank"></a>
+        <a class="soc-media fa-brands fa-linkedin fa-2xl" href="http://www.linkedin.com/in/kristen-morrison-2176701b4/"
+          style="color: #ffffff;" target="_blank"></a>
+        <a class="soc-media fa-brands fa-instagram fa-2xl" href="https://www.instagram.com/krismorrison5228/"
+          style="color: #ffffff;" target="_blank"></a>
+      </div>
+      <div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#fff">
+      </div>
+
+
+      <div>
+
+        <i class="copyright fa-solid fa-copyright justify-content-center" style="color: #fff;"> Kristen Morrison</i>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
