@@ -1,78 +1,85 @@
+/* Kristen Morrison - Styles sheet for Online Profile */
+
 body {
   background-image: url(rainbow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-margin: 0;
+  margin: 0;
 }
 
-
+/* move my name on header to the left from the logo */
 .Name {
   padding-left: 1%;
-
-
 }
 
+/* move links on nav bar large vw to the left to make room for dropdown menu */
 .navPad {
   padding-right: 4%;
 }
 
-.dropdown-item {
-  display: none;
-}
-
+/* adjust text above accordion to sit a margin below nav and adjust padding for even spacing between black dividing line */
 .main-title {
   margin-top: 10%;
   padding-bottom: 1%;
 }
 
-.main-title2 {
- padding: 0;
-}
-
+/* make dividing line between Web Developer and Graphic Designer */
 .divider {
-  width: 25%;
-  margin-left: 38%;
+  width: 20%;
+  margin-left: 40%;
 }
 
 
-
+/* Accordion-set margin from top of page and sides */
 .accordion {
   margin-top: 9%;
   margin-left: 15%;
   margin-right: 15%;
 }
 
+/* pictures in hobbies section- display in two columns */
 .hobbies-pics {
   display: block;
   float: left;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
- 
+
+}
+/* pictures in hobbies section- seperate class for 2 pictures, different height requirements for good resolution*/
+.hobbies-pics-tall {
+  display: block;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
+/* padding between Web Dev Projects/Graphic Design Projects and beginning of images */
 .projects-title {
   padding-top: 3%;
   padding-bottom: 2%;
 }
 
+/* thin border around images */
 div.gallery {
   border: 1px solid #ccc;
- 
 }
 
+/* opacity and border thicker and color to red when images hovered over */
 div.gallery:hover {
   border: 2px solid #a71a1a;
-opacity: .7;
+  opacity: .7;
 }
 
+/* image heights adjusted to be uniform */
 div.gallery img {
   width: 100%;
   height: 175px;
 }
 
 
-
+/*area under image cards with descriptions, text centered and padding*/
 div.desc {
   padding: 15px;
   text-align: center;
@@ -85,6 +92,7 @@ div.desc {
   box-sizing: border-box;
 }
 
+/*set width of images to form 4 columns in My Projects accordion*/
 .responsive {
   padding: 0 6px;
   float: left;
@@ -95,29 +103,34 @@ div.desc {
   height: auto;
 }
 
+/*make space between bottom of accordion and footer*/
 footer {
   padding-top: 200px;
 }
 
+/*adjust email address in footer to be in alignment with logo and social media icons*/
 .contact {
   padding-top: 3%;
 }
 
+/*make space between social media icons in footer*/
 .soc-media {
   text-decoration: none;
   padding: 30px 20px 15px;
 }
 
+/*adjust logo size in footer*/
 .footerlogo {
   width: 10%;
-  
 }
 
+/*center copyright in footer*/
 .copyright {
- margin-left: 47%;
+  margin-left: 47%;
   font-size: 10px;
 }
 
+/*make 2 columns instead of 4 in my projects accordion*/
 @media only screen and (max-width: 900px) {
   .responsive {
     width: 50%;
@@ -125,20 +138,30 @@ footer {
   }
 }
 
-
+/*make 1 columns instead of 4 in my projects accordion*/
 @media only screen and (max-width: 700px) {
-  .responsive {
-    width: 50%;
-    margin: 6px 0;
+
+  .responsive,
+  .footerlogo {
+    width: 100%;
   }
 }
 
+/*remove logo in footer so it's not squished*/
+@media only screen and (max-width: 700px) {
+  .footerlogo {
+    display: none;
+  }
+}
+
+/*make 1 columns instead of 4 in my projects accordion*/
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
   }
 }
 
+/*remove logo in footer so it's not squished*/
 @media only screen and (max-width: 500px) {
   .footerlogo {
     display: none;
@@ -146,6 +169,7 @@ footer {
   }
 }
 
+/*center email in footer- mobile vw*/
 @media only screen and (max-width: 500px) {
   .contact {
     margin-left: 107%;
@@ -153,9 +177,40 @@ footer {
   }
 }
 
+/*center copyright in footer- mobile vw*/
 @media only screen and (max-width: 500px) {
   .copyright {
     margin-left: 37%;
 
+  }
+}
+
+/*bring margin down to see display text top of page, so navbar doesn't cut off- mobile vw*/
+@media only screen and (max-width: 500px) {
+  .main-body {
+    margin-top: 30%;
+
+  }
+}
+
+/*one column images- mobile vw*/
+@media only screen and (max-width: 500px) {
+  .hobbies-pics {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/*one column images- mobile vw*/
+@media only screen and (max-width: 500px) {
+  .hobbies-pics-tall {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-size: cover;
   }
 }
